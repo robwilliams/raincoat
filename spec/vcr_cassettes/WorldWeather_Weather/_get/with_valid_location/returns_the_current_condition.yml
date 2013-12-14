@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.worldweatheronline.com/free/v1/weather.ashx?format=JSON&key=nfvms2axfxrs9kaza6yywqqj&q=London
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=120
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 14 Dec 2013 22:33:33 GMT
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Cache:
+      - MISS
+      X-Mashery-Responder:
+      - prod-j-worker-eu-west-1a-96.mashery.com
+      X-Powered-By:
+      - UKFast Webcelerator
+      Content-Length:
+      - '433'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{ "data": { "current_condition": [ {"cloudcover": "75", "humidity":
+        "71", "observation_time": "10:33 PM", "precipMM": "0.2", "pressure": "1018",
+        "temp_C": "12", "temp_F": "54", "visibility": "10", "weatherCode": "116",  "weatherDesc":
+        [ {"value": "Partly Cloudy" } ],  "weatherIconUrl": [ {"value": "http:\/\/cdn.worldweatheronline.net\/images\/wsymbols01_png_64\/wsymbol_0004_black_low_cloud.png"
+        } ], "winddir16Point": "SW", "winddirDegree": "220", "windspeedKmph": "37",
+        "windspeedMiles": "23" } ],  "request": [ {"query": "London, United Kingdom",
+        "type": "City" } ],  "weather": [ {"date": "2013-12-14", "precipMM": "0.2",
+        "tempMaxC": "11", "tempMaxF": "52", "tempMinC": "7", "tempMinF": "44", "weatherCode":
+        "116",  "weatherDesc": [ {"value": "Partly Cloudy" } ],  "weatherIconUrl":
+        [ {"value": "http:\/\/cdn.worldweatheronline.net\/images\/wsymbols01_png_64\/wsymbol_0002_sunny_intervals.png"
+        } ], "winddir16Point": "SSW", "winddirDegree": "208", "winddirection": "SSW",
+        "windspeedKmph": "37", "windspeedMiles": "23" } ] }}'
+    http_version: 
+  recorded_at: Sat, 14 Dec 2013 22:33:32 GMT
+recorded_with: VCR 2.8.0
