@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.worldweatheronline.com/free/v1/search.ashx?format=JSON&key=nfvms2axfxrs9kaza6yywqqj&q=London
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=120
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 14 Dec 2013 22:32:13 GMT
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Cache:
+      - MISS
+      X-Mashery-Responder:
+      - prod-j-worker-eu-west-1a-92.mashery.com
+      X-Powered-By:
+      - UKFast Webcelerator
+      Content-Length:
+      - '614'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{ "search_api": { "result": [ { "areaName": [ {"value": "London" }
+        ],  "country": [ {"value": "United Kingdom" } ], "latitude": "51.517", "longitude":
+        "-0.106", "population": "7421228",  "region": [ {"value": "City Of London,
+        Greater London" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/London-weather\/City-of-London-Greater-London\/GB.aspx"
+        } ] }, { "areaName": [ {"value": "London" } ],  "country": [ {"value": "Canada"
+        } ], "latitude": "42.983", "longitude": "-81.250", "population": "346774",  "region":
+        [ {"value": "Ontario" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/London-weather\/Ontario\/CA.aspx"
+        } ] }, { "areaName": [ {"value": "London" } ],  "country": [ {"value": "Belize"
+        } ], "latitude": "17.983", "longitude": "-88.433", "population": "0",  "region":
+        [ {"value": "Orange Walk" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/London-weather\/Orange-Walk\/BZ.aspx"
+        } ] }, { "areaName": [ {"value": "London" } ],  "country": [ {"value": "Equatorial
+        Guinea" } ], "latitude": "2.283", "longitude": "9.800", "population": "0",  "region":
+        [ {"value": "Litoral" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/London-weather\/Litoral\/GQ.aspx"
+        } ] }, { "areaName": [ {"value": "London" } ],  "country": [ {"value": "Kiribati"
+        } ], "latitude": "1.983", "longitude": "-157.467", "population": "0",  "weatherUrl":
+        [ {"value": "http:\/\/www.worldweatheronline.com\/London-weather\/KI.aspx"
+        } ] }, { "areaName": [ {"value": "London" } ],  "country": [ {"value": "Myanmar"
+        } ], "latitude": "25.100", "longitude": "96.283", "population": "0",  "region":
+        [ {"value": "Kachin State" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/London-weather\/Kachin-State\/MM.aspx"
+        } ] }, { "areaName": [ {"value": "London" } ],  "country": [ {"value": "Nigeria"
+        } ], "latitude": "5.717", "longitude": "5.783", "population": "0",  "region":
+        [ {"value": "Adamawa" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/London-weather\/Adamawa\/NG.aspx"
+        } ] }, { "areaName": [ {"value": "London" } ],  "country": [ {"value": "Philippines"
+        } ], "latitude": "6.010", "longitude": "125.129", "population": "0",  "region":
+        [ {"value": "General Santos" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/London-weather\/General-Santos\/PH.aspx"
+        } ] }, { "areaName": [ {"value": "London" } ],  "country": [ {"value": "Russia"
+        } ], "latitude": "52.800", "longitude": "79.550", "population": "0",  "region":
+        [ {"value": "Altaisky Krai" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/London-weather\/Altaisky-krai\/RU.aspx"
+        } ] }, { "areaName": [ {"value": "London" } ],  "country": [ {"value": "South
+        Africa" } ], "latitude": "-24.767", "longitude": "30.867", "population": "0",  "region":
+        [ {"value": "Mpumalanga" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/London-weather\/Mpumalanga\/ZA.aspx"
+        } ] } ] }}'
+    http_version: 
+  recorded_at: Sat, 14 Dec 2013 22:32:12 GMT
+recorded_with: VCR 2.8.0

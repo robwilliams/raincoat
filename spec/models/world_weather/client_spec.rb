@@ -1,13 +1,14 @@
 require 'spec_helper'
 
 module WorldWeather
-  describe Client do
+  describe Client, vcr: true do
+
     subject { described_class.new(client_args) }
 
     context "without an api key" do
       let(:client_args) { }
 
-      it do
+      it "raises ApiKeyMissing" do
         expect{ subject }.to raise_error(ApiKeyMissing)
       end
     end
@@ -16,7 +17,7 @@ module WorldWeather
       let(:client_args) { {api_key: 'invalid'} }
 
       describe "#get" do
-        it do
+        it "raises InvalidApiKey" do
           expect{ subject.get("search.ashx", q: "London") }.to(
             raise_error(InvalidApiKey)
           )
