@@ -45,4 +45,12 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem "foreman", require: false, group: :development
-gem "rspec-rails", group: [:development, :test]
+
+group :development, :test do
+  gem "rspec-rails"
+end
+
+group :test do
+  gem "capybara"
+  gem "vcr"
+end
