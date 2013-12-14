@@ -8,6 +8,7 @@ class ForecastsController < ApplicationController
 
   def create
     @forecast = Forecast.new(params[:forecast])
+    flash.now.alert = t('alerts.enter_location') unless @forecast.valid?
     respond_with(@forecast)
   end
 end

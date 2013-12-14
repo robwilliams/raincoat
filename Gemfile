@@ -53,4 +53,5 @@ end
 group :test do
   gem "capybara"
   gem "vcr"
+  gem "shoulda-matchers"
 end

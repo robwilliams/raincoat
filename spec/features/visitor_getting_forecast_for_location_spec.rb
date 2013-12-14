@@ -12,4 +12,12 @@ feature "Visitor getting forecast for location" do
       expect(page).to have_content("Clear")
     end
   end
+
+  scenario "using an empty location" do
+    visit "/"
+    fill_in "location_input", with: ""
+    click_button "location_button"
+
+    expect(page).to have_content("Please enter a location")
+  end
 end
