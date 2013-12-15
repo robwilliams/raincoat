@@ -5,6 +5,8 @@ class Location
   validates :name, presence: true
 
   def weather
-    @weather ||= WorldWeather::Weather.new.get(name)
+    Rails.cache.fetch("weather_for_#{name}") {
+      WorldWeather::Weather.new.get(name)
+    }
   end
 end
