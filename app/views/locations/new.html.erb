@@ -1,4 +1,4 @@
 <%= form_for @location do |f| %>
-  <%= f.text_field :name, id: 'location_input' %>
-  <%= f.submit 'Get Forecast', id: 'location_button' %>
+  <%= f.text_field :name, id: 'location_input' , placeholder: 'Enter a town or postcode...' %>
+  <%= f.submit 'Get Forecast', id: 'location_button', class: 'button' %>
 <% end %>

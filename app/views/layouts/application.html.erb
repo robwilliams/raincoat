@@ -1,17 +1,28 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Raincoat</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <% if flash[:alert] %>
-    <%= flash[:alert] %>
-  <% end %>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<%= yield %>
+    <title><%= content_for?(:title) ? yield(:title) : "Raincoat" %></title>
 
-</body>
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <div class="row">
+      <div class="large-8 large-offset-2 columns">
+        <h1><%= link_to "Raincoat", root_path %></h1>
+
+        <% if flash[:alert] %>
+          <div data-alert class="alert-box"><%= flash[:alert] %></div>
+        <% end %>
+
+        <%= yield %>
+        <%= javascript_include_tag "application" %>
+      </div>
+    </div>
+  </body>
 </html>

@@ -1,5 +1,14 @@
+<h2>Forecast for <%= @location.name %></h2>
+
 <div id="forecast_current">
-  <%= @weather.current_condition.temp_C %>c
-  <%= @weather.current_condition.temp_F %>f
-  <%= @weather.current_condition.weatherDesc.first.value %>
+  <ul class="pricing-table">
+    <li class="title">Today</li>
+    <li class="price">
+    <%= @location.weather.current_condition.temp_C %>c /
+    <%= @location.weather.current_condition.temp_F %>f
+    </li>
+    <li class="description">
+      <%= @location.weather.current_condition.weatherDesc.first.value %>
+    </li>
+  </ul>
 </div>
