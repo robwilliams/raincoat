@@ -16,7 +16,6 @@ module WorldWeather
         end
 
         it "returns the current_condition" do
-          p subject
           expect(subject.current_condition).to respond_to("cloudcover")
         end
 
