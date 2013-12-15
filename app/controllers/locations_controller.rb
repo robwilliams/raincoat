@@ -19,7 +19,7 @@ class LocationsController < ApplicationController
     @location = Location.new(name: params[:id])
 
     unless @location.weather.success?
-      flash.now.alert = t('alerts.location_invalid') 
+      flash.now.alert = t('alerts.invalid_location') 
       render :new
     end
   end

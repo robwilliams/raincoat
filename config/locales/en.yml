@@ -23,4 +23,4 @@ en:
   hello: "Hello world"
   alerts:
     enter_location: "Please enter a location"
-    location_invalid: "Please enter a valid location"
+    invalid_location: "Please enter a valid location"
