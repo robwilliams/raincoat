@@ -1,8 +1,6 @@
-require 'world_weather'
-
 module WorldWeather
+  DEFAULT_ENDPOINT="http://api.worldweatheronline.com/free/v1/"
   class Client
-
     def initialize(options = {})
       options = {} if options.nil?
       @endpoint = options.fetch(:endpoint, WorldWeather::DEFAULT_ENDPOINT)
