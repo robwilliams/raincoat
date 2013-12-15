@@ -1,0 +1,6 @@
+<tr id="forecast_<%= number_to_word(index + 1) %>">
+  <td width="75"><%= image_tag(forecast.icon_url) %></td>
+  <td><%= forecast.date.strftime("%A") %></td>
+  <td><%= forecast.temp_min_c %> &#176;c</td>
+  <td><%= forecast.temp_max_c %> &#176;c</td>
+</tr>

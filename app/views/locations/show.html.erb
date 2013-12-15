@@ -1,4 +1,6 @@
-<h2>Weather for <%= @location.name %></h2>
+<%= render template: 'locations/new' %>
+
+<h2>Current Weather for <%= @location.name.capitalize %></h2>
 
 <div id="forecast_current">
   <ul class="pricing-table">
@@ -14,7 +16,7 @@
 </div>
 
 <h3>5 Day Forecast</h3>
-<table>
+<table width="100%">
   <thead>
     <tr>
       <th></th>
@@ -25,12 +27,8 @@
   </thead>
   <tbody>
     <% @location.weather.each_with_index do |forecast, i| %>
-      <tr id="forecast_<%= number_to_word(i + 1) %>">
-        <td><%= image_tag(forecast.icon_url) %>
-        <td><%= forecast.date.strftime("%A") %>
-        <td><%= forecast.temp_min_c %> &#176;c</td>
-        <td><%= forecast.temp_max_c %> &#176;c</td>
-      </tr>
+      <%= render 'forecast', forecast: forecast, index: i %>
     <% end %>
   </tbody>
 </table>
+

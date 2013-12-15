@@ -1,4 +1,13 @@
 <%= form_for @location do |f| %>
-  <%= f.text_field :name, id: 'location_input' , placeholder: 'Enter a town or postcode...' %>
-  <%= f.submit 'Get Forecast', id: 'location_button', class: 'button' %>
+  <div class="row collapse">
+    <div class="large-12 columns">
+      <div class="row collapse">
+        <div class="small-10 columns">
+          <%= f.text_field :name, id: 'location_input' , placeholder: 'Enter a town or postcode...' %>
+        </div>
+        <div class="small-2 columns">
+          <%= f.submit 'Get Forecast', id: 'location_button', class: 'button postfix' %>
+        </div>
+      </div>
+    </div>
 <% end %>
