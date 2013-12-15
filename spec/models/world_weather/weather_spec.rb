@@ -3,8 +3,7 @@ require 'spec_helper'
 module WorldWeather 
   describe Weather, vcr: true do
 
-    let(:client) { Client.new(api_key: ENV['WORLD_WEATHER_API_KEY'])}
-    let(:weather) { described_class.new(client) }
+    let(:weather) { described_class.new }
     
     describe "#get" do
       subject { weather.get(location) }

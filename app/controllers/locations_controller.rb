@@ -16,7 +16,7 @@ class LocationsController < ApplicationController
   end
 
   def show
-    @weather = WeatherForLocation.new.get(params[:id])
+    @weather = WorldWeather::Weather.new.get(params[:id])
     unless @weather.valid?
       redirect_to new_location_path, alert: t('alerts.location_invalid')
     end

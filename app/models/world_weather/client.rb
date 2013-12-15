@@ -1,15 +1,14 @@
 module WorldWeather
-  DEFAULT_ENDPOINT="http://api.worldweatheronline.com/free/v1/"
+
+  ENDPOINT="http://api.worldweatheronline.com/free/v1/"
+
   class Client
-    def initialize(options = {})
-      options = {} if options.nil?
-      @endpoint = options.fetch(:endpoint, WorldWeather::DEFAULT_ENDPOINT)
-      begin
-        @api_key  = options.fetch(:api_key)
-      rescue KeyError
-        raise ApiKeyMissing, ":api_key should be a Free World Weather API key"
-      end
+    def initialize(options={})
+      @endpoint = WorldWeather::ENDPOINT
+      @api_key  = options.fetch(:api_key, ENV['WORLD_WEATHER_API_KEY'])
     end
+
+    attr_reader :endpoint, :api_key
 
     def get(path, params={})
       params.merge!(key: api_key, format: 'JSON')
@@ -19,8 +18,6 @@ module WorldWeather
     end
 
     private
-    attr_reader :endpoint, :api_key
-
     def connection
       Faraday.new(url: endpoint) do |faraday|
         #faraday.response :logger                  # log requests to STDOUT

@@ -2,8 +2,8 @@ module WorldWeather
   class Weather
     PATH = 'weather.ashx'
 
-    def initialize(client)
-      @client = client
+    def initialize
+      @client = WorldWeather::Client.new
     end
 
     def get(location)
