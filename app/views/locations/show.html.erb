@@ -12,3 +12,25 @@
     </li>
   </ul>
 </div>
+
+<h3>5 Day Forecast</h3>
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Day</th>
+      <th>Min</th>
+      <th>Max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @location.weather.each_with_index do |forecast, i| %>
+      <tr id="forecast_<%= i + 1 %>">
+        <td><%= image_tag(forecast.icon_url) %>
+        <td><%= forecast.date.strftime("%A") %>
+        <td><%= forecast.temp_min_c %> &#176;c</td>
+        <td><%= forecast.temp_max_c %> &#176;c</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

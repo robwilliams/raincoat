@@ -18,10 +18,18 @@ feature "Visitor getting forecast for location", vcr: true do
     fill_in "location_input", with: "Birmingham, United Kingdom"
     click_button "location_button"
 
-    within("#forecast_current") do
-      expect(page).to have_content("11c")
-      expect(page).to have_content("52f")
-      expect(page).to have_content("Partly Cloudy")
+    {
+      current: { c: "13", f: "55", condition: "Partly Cloudy"},
+      one:     { c: "10", f: "50", condition: "Partly Cloudy"},
+      two:     { c: "10", f: "50", condition: "Partly Cloudy"},
+      three:   { c: "10", f: "50", condition: "Partly Cloudy"},
+      four:    { c: "10", f: "50", condition: "Partly Cloudy"},
+      five:    { c: "10", f: "50", condition: "Partly Cloudy"},
+    }.each do |key, values|
+
+      within("#forecast_#{key}") do
+        values.each{|_, value| expect(page).to have_content(value) }
+      end
     end
   end
 
