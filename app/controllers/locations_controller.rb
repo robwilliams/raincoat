@@ -8,7 +8,7 @@ class LocationsController < ApplicationController
     @location = Location.new(params[:location])
 
     if @location.valid?
-      redirect_to location_path(id: @location.name)
+      redirect_to location_path(@location.name)
     else
       flash.now.alert = t('alerts.enter_location') 
       render :new
