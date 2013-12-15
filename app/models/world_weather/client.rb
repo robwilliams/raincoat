@@ -23,7 +23,6 @@ module WorldWeather
     def connection
       Faraday.new(url: endpoint) do |faraday|
         #faraday.response :logger                  # log requests to STDOUT
-        faraday.response :mashify
         faraday.response :json
         faraday.adapter  Faraday.default_adapter  # make requests with Net::HTTP
       end

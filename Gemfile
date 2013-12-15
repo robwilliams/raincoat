@@ -29,7 +29,6 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'faraday'
 gem 'faraday_middleware'
-gem 'hashie'
 gem 'foundation-rails'
 
 group :doc do

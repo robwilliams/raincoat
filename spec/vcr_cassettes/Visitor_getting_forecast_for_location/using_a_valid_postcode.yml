@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.worldweatheronline.com/free/v1/weather.ashx?format=JSON&key=nfvms2axfxrs9kaza6yywqqj&q=SP4%207DE
+    uri: http://api.worldweatheronline.com/free/v1/weather.ashx?format=JSON&key=nfvms2axfxrs9kaza6yywqqj&num_of_days=5&q=SP4%207DE
     body:
       encoding: US-ASCII
       string: ''
@@ -27,7 +27,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 14 Dec 2013 23:07:46 GMT
+      - Sun, 15 Dec 2013 14:54:02 GMT
       Server:
       - Microsoft-IIS/7.5
       X-Aspnet-Version:
@@ -35,26 +35,46 @@ http_interactions:
       X-Cache:
       - MISS
       X-Mashery-Responder:
-      - prod-j-worker-eu-west-1a-102.mashery.com
+      - prod-j-worker-eu-west-1b-93.mashery.com
       X-Powered-By:
       - UKFast Webcelerator
       Content-Length:
-      - '456'
+      - '632'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{ "data": { "current_condition": [ {"cloudcover": "75", "humidity":
-        "94", "observation_time": "11:07 PM", "precipMM": "2.6", "pressure": "1017",
-        "temp_C": "10", "temp_F": "50", "visibility": "5", "weatherCode": "299",  "weatherDesc":
-        [ {"value": "Moderate rain at times" } ],  "weatherIconUrl": [ {"value": "http:\/\/cdn.worldweatheronline.net\/images\/wsymbols01_png_64\/wsymbol_0026_heavy_rain_showers_night.png"
-        } ], "winddir16Point": "SSW", "winddirDegree": "200", "windspeedKmph": "37",
-        "windspeedMiles": "23" } ],  "request": [ {"query": "SP4", "type": "Postcode"
-        } ],  "weather": [ {"date": "2013-12-14", "precipMM": "2.6", "tempMaxC": "12",
-        "tempMaxF": "53", "tempMinC": "7", "tempMinF": "44", "weatherCode": "116",  "weatherDesc":
-        [ {"value": "Partly Cloudy" } ],  "weatherIconUrl": [ {"value": "http:\/\/cdn.worldweatheronline.net\/images\/wsymbols01_png_64\/wsymbol_0002_sunny_intervals.png"
-        } ], "winddir16Point": "SSW", "winddirDegree": "199", "winddirection": "SSW",
-        "windspeedKmph": "35", "windspeedMiles": "22" } ] }}'
+      string: '{ "data": { "current_condition": [ {"cloudcover": "100", "humidity":
+        "100", "observation_time": "02:53 PM", "precipMM": "0.3", "pressure": "1017",
+        "temp_C": "12", "temp_F": "54", "visibility": "4", "weatherCode": "302",  "weatherDesc":
+        [ {"value": "Moderate rain" } ],  "weatherIconUrl": [ {"value": "http:\/\/cdn.worldweatheronline.net\/images\/wsymbols01_png_64\/wsymbol_0018_cloudy_with_heavy_rain.png"
+        } ], "winddir16Point": "SSW", "winddirDegree": "200", "windspeedKmph": "35",
+        "windspeedMiles": "22" } ],  "request": [ {"query": "SP4", "type": "Postcode"
+        } ],  "weather": [ {"date": "2013-12-15", "precipMM": "7.8", "tempMaxC": "12",
+        "tempMaxF": "54", "tempMinC": "10", "tempMinF": "50", "weatherCode": "266",  "weatherDesc":
+        [ {"value": "Light drizzle" } ],  "weatherIconUrl": [ {"value": "http:\/\/cdn.worldweatheronline.net\/images\/wsymbols01_png_64\/wsymbol_0017_cloudy_with_light_rain.png"
+        } ], "winddir16Point": "S", "winddirDegree": "188", "winddirection": "S",
+        "windspeedKmph": "33", "windspeedMiles": "21" }, {"date": "2013-12-16", "precipMM":
+        "10.9", "tempMaxC": "13", "tempMaxF": "55", "tempMinC": "3", "tempMinF": "38",
+        "weatherCode": "302",  "weatherDesc": [ {"value": "Moderate rain" } ],  "weatherIconUrl":
+        [ {"value": "http:\/\/cdn.worldweatheronline.net\/images\/wsymbols01_png_64\/wsymbol_0018_cloudy_with_heavy_rain.png"
+        } ], "winddir16Point": "SW", "winddirDegree": "224", "winddirection": "SW",
+        "windspeedKmph": "29", "windspeedMiles": "18" }, {"date": "2013-12-17", "precipMM":
+        "4.2", "tempMaxC": "8", "tempMaxF": "47", "tempMinC": "4", "tempMinF": "39",
+        "weatherCode": "113",  "weatherDesc": [ {"value": "Sunny" } ],  "weatherIconUrl":
+        [ {"value": "http:\/\/cdn.worldweatheronline.net\/images\/wsymbols01_png_64\/wsymbol_0001_sunny.png"
+        } ], "winddir16Point": "SE", "winddirDegree": "131", "winddirection": "SE",
+        "windspeedKmph": "9", "windspeedMiles": "6" }, {"date": "2013-12-18", "precipMM":
+        "11.0", "tempMaxC": "10", "tempMaxF": "50", "tempMinC": "4", "tempMinF": "40",
+        "weatherCode": "119",  "weatherDesc": [ {"value": "Cloudy" } ],  "weatherIconUrl":
+        [ {"value": "http:\/\/cdn.worldweatheronline.net\/images\/wsymbols01_png_64\/wsymbol_0003_white_cloud.png"
+        } ], "winddir16Point": "S", "winddirDegree": "183", "winddirection": "S",
+        "windspeedKmph": "39", "windspeedMiles": "24" }, {"date": "2013-12-19", "precipMM":
+        "9.8", "tempMaxC": "6", "tempMaxF": "43", "tempMinC": "2", "tempMinF": "35",
+        "weatherCode": "113",  "weatherDesc": [ {"value": "Sunny" } ],  "weatherIconUrl":
+        [ {"value": "http:\/\/cdn.worldweatheronline.net\/images\/wsymbols01_png_64\/wsymbol_0001_sunny.png"
+        } ], "winddir16Point": "SW", "winddirDegree": "232", "winddirection": "SW",
+        "windspeedKmph": "23", "windspeedMiles": "15" } ] }}'
     http_version: 
-  recorded_at: Sat, 14 Dec 2013 23:07:46 GMT
+  recorded_at: Sun, 15 Dec 2013 14:54:05 GMT
 recorded_with: VCR 2.8.0

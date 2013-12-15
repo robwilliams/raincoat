@@ -11,16 +11,12 @@ module WorldWeather
       context "with valid location" do
         let(:location) { "London" }
 
-        it "is valid" do
-          expect(subject).to be_valid
+        it "is successful" do
+          expect(subject).to be_success
         end
 
-        it "returns the current_condition" do
-          expect(subject.current_condition).to respond_to("cloudcover")
-        end
-
-        it "returns the weather" do
-          expect(subject.weather.first).to respond_to("tempMaxC")
+        it "returns a Response" do
+          expect(subject).to be_a(Response)
         end
       end
 
@@ -28,7 +24,7 @@ module WorldWeather
         let(:location) { "39187498719847591735923785" }
 
         it "is not valid" do
-          expect(subject).to_not be_valid
+          expect(subject).to_not be_success
         end
       end
     end

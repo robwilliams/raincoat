@@ -29,10 +29,6 @@ module WorldWeather
       it "returns the response as a hash" do
         expect(subject.get("search.ashx", q: "London")).to have_key("search_api")
       end
-
-      it "returns the response as idiomatic ruby" do
-        expect(subject.get("search.ashx", q: "London")).to respond_to("search_api")
-      end
     end
 
     context "with an invalid api key" do

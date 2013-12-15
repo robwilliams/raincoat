@@ -7,8 +7,8 @@ feature "Visitor getting forecast for location", vcr: true do
     click_button "location_button"
 
     within("#forecast_current") do
-      expect(page).to have_content("10c")
-      expect(page).to have_content("50f")
+      expect(page).to have_content("12")
+      expect(page).to have_content("54")
       expect(page).to have_content("Moderate rain")
     end
   end

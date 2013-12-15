@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.worldweatheronline.com/free/v1/weather.ashx?format=JSON&key=nfvms2axfxrs9kaza6yywqqj&q=Birmingham,%20United%20Kingdom
+    uri: http://api.worldweatheronline.com/free/v1/weather.ashx?format=JSON&key=nfvms2axfxrs9kaza6yywqqj&num_of_days=5&q=Birmingham,%20United%20Kingdom
     body:
       encoding: US-ASCII
       string: ''
@@ -27,7 +27,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 14 Dec 2013 23:07:46 GMT
+      - Sun, 15 Dec 2013 14:54:03 GMT
       Server:
       - Microsoft-IIS/7.5
       X-Aspnet-Version:
@@ -35,27 +35,47 @@ http_interactions:
       X-Cache:
       - MISS
       X-Mashery-Responder:
-      - prod-j-worker-eu-west-1a-98.mashery.com
+      - prod-j-worker-eu-west-1b-91.mashery.com
       X-Powered-By:
       - UKFast Webcelerator
       Content-Length:
-      - '447'
+      - '644'
       Connection:
       - keep-alive
     body:
       encoding: UTF-8
       string: '{ "data": { "current_condition": [ {"cloudcover": "75", "humidity":
-        "87", "observation_time": "11:07 PM", "precipMM": "2.4", "pressure": "1012",
-        "temp_C": "11", "temp_F": "52", "visibility": "10", "weatherCode": "116",  "weatherDesc":
-        [ {"value": "Partly Cloudy" } ],  "weatherIconUrl": [ {"value": "http:\/\/cdn.worldweatheronline.net\/images\/wsymbols01_png_64\/wsymbol_0004_black_low_cloud.png"
-        } ], "winddir16Point": "SSW", "winddirDegree": "200", "windspeedKmph": "30",
-        "windspeedMiles": "19" } ],  "request": [ {"query": "Birmingham, United Kingdom",
-        "type": "City" } ],  "weather": [ {"date": "2013-12-14", "precipMM": "3.5",
-        "tempMaxC": "10", "tempMaxF": "50", "tempMinC": "5", "tempMinF": "41", "weatherCode":
-        "116",  "weatherDesc": [ {"value": "Partly Cloudy" } ],  "weatherIconUrl":
-        [ {"value": "http:\/\/cdn.worldweatheronline.net\/images\/wsymbols01_png_64\/wsymbol_0002_sunny_intervals.png"
-        } ], "winddir16Point": "S", "winddirDegree": "187", "winddirection": "S",
-        "windspeedKmph": "41", "windspeedMiles": "26" } ] }}'
+        "94", "observation_time": "02:53 PM", "precipMM": "0.0", "pressure": "1013",
+        "temp_C": "13", "temp_F": "55", "visibility": "10", "weatherCode": "116",  "weatherDesc":
+        [ {"value": "Partly Cloudy" } ],  "weatherIconUrl": [ {"value": "http:\/\/cdn.worldweatheronline.net\/images\/wsymbols01_png_64\/wsymbol_0002_sunny_intervals.png"
+        } ], "winddir16Point": "S", "winddirDegree": "190", "windspeedKmph": "19",
+        "windspeedMiles": "12" } ],  "request": [ {"query": "Birmingham, United Kingdom",
+        "type": "City" } ],  "weather": [ {"date": "2013-12-15", "precipMM": "3.3",
+        "tempMaxC": "12", "tempMaxF": "53", "tempMinC": "11", "tempMinF": "52", "weatherCode":
+        "122",  "weatherDesc": [ {"value": "Overcast" } ],  "weatherIconUrl": [ {"value":
+        "http:\/\/cdn.worldweatheronline.net\/images\/wsymbols01_png_64\/wsymbol_0004_black_low_cloud.png"
+        } ], "winddir16Point": "S", "winddirDegree": "180", "winddirection": "S",
+        "windspeedKmph": "39", "windspeedMiles": "24" }, {"date": "2013-12-16", "precipMM":
+        "2.6", "tempMaxC": "12", "tempMaxF": "53", "tempMinC": "3", "tempMinF": "37",
+        "weatherCode": "293",  "weatherDesc": [ {"value": "Patchy light rain" } ],  "weatherIconUrl":
+        [ {"value": "http:\/\/cdn.worldweatheronline.net\/images\/wsymbols01_png_64\/wsymbol_0017_cloudy_with_light_rain.png"
+        } ], "winddir16Point": "W", "winddirDegree": "270", "winddirection": "W",
+        "windspeedKmph": "34", "windspeedMiles": "21" }, {"date": "2013-12-17", "precipMM":
+        "0.8", "tempMaxC": "6", "tempMaxF": "44", "tempMinC": "2", "tempMinF": "35",
+        "weatherCode": "113",  "weatherDesc": [ {"value": "Sunny" } ],  "weatherIconUrl":
+        [ {"value": "http:\/\/cdn.worldweatheronline.net\/images\/wsymbols01_png_64\/wsymbol_0001_sunny.png"
+        } ], "winddir16Point": "SSW", "winddirDegree": "198", "winddirection": "SSW",
+        "windspeedKmph": "15", "windspeedMiles": "9" }, {"date": "2013-12-18", "precipMM":
+        "5.2", "tempMaxC": "7", "tempMaxF": "45", "tempMinC": "3", "tempMinF": "38",
+        "weatherCode": "122",  "weatherDesc": [ {"value": "Overcast" } ],  "weatherIconUrl":
+        [ {"value": "http:\/\/cdn.worldweatheronline.net\/images\/wsymbols01_png_64\/wsymbol_0004_black_low_cloud.png"
+        } ], "winddir16Point": "S", "winddirDegree": "172", "winddirection": "S",
+        "windspeedKmph": "42", "windspeedMiles": "26" }, {"date": "2013-12-19", "precipMM":
+        "8.5", "tempMaxC": "5", "tempMaxF": "41", "tempMinC": "0", "tempMinF": "32",
+        "weatherCode": "113",  "weatherDesc": [ {"value": "Sunny" } ],  "weatherIconUrl":
+        [ {"value": "http:\/\/cdn.worldweatheronline.net\/images\/wsymbols01_png_64\/wsymbol_0001_sunny.png"
+        } ], "winddir16Point": "SW", "winddirDegree": "232", "winddirection": "SW",
+        "windspeedKmph": "24", "windspeedMiles": "15" } ] }}'
     http_version: 
-  recorded_at: Sat, 14 Dec 2013 23:07:46 GMT
+  recorded_at: Sun, 15 Dec 2013 14:54:06 GMT
 recorded_with: VCR 2.8.0

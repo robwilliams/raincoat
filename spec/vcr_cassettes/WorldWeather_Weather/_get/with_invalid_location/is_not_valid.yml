@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.worldweatheronline.com/free/v1/weather.ashx?format=JSON&key=nfvms2axfxrs9kaza6yywqqj&q=39187498719847591735923785
+    uri: http://api.worldweatheronline.com/free/v1/weather.ashx?format=JSON&key=nfvms2axfxrs9kaza6yywqqj&num_of_days=5&q=39187498719847591735923785
     body:
       encoding: US-ASCII
       string: ''
@@ -27,7 +27,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 14 Dec 2013 22:33:33 GMT
+      - Sun, 15 Dec 2013 12:18:53 GMT
       Server:
       - Microsoft-IIS/7.5
       X-Aspnet-Version:
@@ -35,7 +35,7 @@ http_interactions:
       X-Cache:
       - MISS
       X-Mashery-Responder:
-      - prod-j-worker-eu-west-1a-90.mashery.com
+      - prod-j-worker-eu-west-1b-93.mashery.com
       X-Powered-By:
       - UKFast Webcelerator
       Content-Length:
@@ -47,5 +47,5 @@ http_interactions:
       string: '{ "data": { "error": [ {"msg": "Unable to find any matching weather
         location to the query submitted!" } ] }}'
     http_version: 
-  recorded_at: Sat, 14 Dec 2013 22:33:32 GMT
+  recorded_at: Sun, 15 Dec 2013 12:18:56 GMT
 recorded_with: VCR 2.8.0
