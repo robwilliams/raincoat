@@ -16,9 +16,11 @@ class LocationsController < ApplicationController
   end
 
   def show
-    @weather = WorldWeather::Weather.new.get(params[:id])
-    unless @weather.valid?
-      redirect_to new_location_path, alert: t('alerts.location_invalid')
+    @location = Location.new(name: params[:id])
+
+    unless @location.weather.valid?
+      flash.now.alert = t('alerts.location_invalid') 
+      render :new
     end
   end
 end
