@@ -12,9 +12,11 @@ module WorldWeather
 
     def get(path, params={})
       params.merge!(key: api_key, format: 'JSON')
-      connection.get(path, params).body
-    rescue Faraday::Error::ParsingError
-      raise InvalidApiKey, ":api_key is invalid"
+      rate_limit do
+        connection.get(path, params).body
+      end
+    rescue Faraday::Error::ParsingError => e
+      raise ApiError, e.message
     end
 
     private
@@ -25,6 +27,11 @@ module WorldWeather
         faraday.response :json
         faraday.adapter  Faraday.default_adapter  # make requests with Net::HTTP
       end
+    end
+
+    def rate_limit
+      sleep 0.33
+      yield
     end
   end
 

@@ -18,6 +18,14 @@ module WorldWeather
     end
 
     describe "#get" do
+      it "does not perform more than 3 requests per second" do
+        expect do
+          %w{Paris Rome Krakow Sydney Tokyo Denver Toronto}.each do |location| 
+            subject.get("search.ashx", q: location)
+          end
+        end.to_not raise_error
+      end
+
       it "returns the response as a hash" do
         expect(subject.get("search.ashx", q: "London")).to have_key("search_api")
       end
