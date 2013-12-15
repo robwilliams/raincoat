@@ -20,11 +20,11 @@ feature "Visitor getting forecast for location", vcr: true do
 
     {
       current: { c: "13", f: "55", condition: "Partly Cloudy"},
-      one:     { c: "10", f: "50", condition: "Partly Cloudy"},
-      two:     { c: "10", f: "50", condition: "Partly Cloudy"},
-      three:   { c: "10", f: "50", condition: "Partly Cloudy"},
-      four:    { c: "10", f: "50", condition: "Partly Cloudy"},
-      five:    { c: "10", f: "50", condition: "Partly Cloudy"},
+      one:     { c: "11", f: "12" },
+      two:     { c: "3", f: "12" },
+      three:   { c: "2", f: "6" },
+      four:    { c: "3", f: "7" },
+      five:    { c: "0", f: "5" },
     }.each do |key, values|
 
       within("#forecast_#{key}") do

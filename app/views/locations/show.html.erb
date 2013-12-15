@@ -25,7 +25,7 @@
   </thead>
   <tbody>
     <% @location.weather.each_with_index do |forecast, i| %>
-      <tr id="forecast_<%= i + 1 %>">
+      <tr id="forecast_<%= number_to_word(i + 1) %>">
         <td><%= image_tag(forecast.icon_url) %>
         <td><%= forecast.date.strftime("%A") %>
         <td><%= forecast.temp_min_c %> &#176;c</td>
