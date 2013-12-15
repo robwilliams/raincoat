@@ -5,7 +5,7 @@ Raincoat::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'locations#new'
 
-  resource :locations
+  resources :locations
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.worldweatheronline.com/free/v1/weather.ashx?format=JSON&key=nfvms2axfxrs9kaza6yywqqj&q=480938205820985092385
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=120
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 14 Dec 2013 23:25:32 GMT
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Cache:
+      - MISS
+      X-Mashery-Responder:
+      - prod-j-worker-eu-west-1b-91.mashery.com
+      X-Powered-By:
+      - UKFast Webcelerator
+      Content-Length:
+      - '109'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{ "data": { "error": [ {"msg": "Unable to find any matching weather
+        location to the query submitted!" } ] }}'
+    http_version: 
+  recorded_at: Sat, 14 Dec 2013 23:25:31 GMT
+recorded_with: VCR 2.8.0

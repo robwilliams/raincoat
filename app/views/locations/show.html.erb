@@ -1,5 +1,5 @@
 <div id="forecast_current">
-  10c
-  50f
-  Clear
+  <%= @weather.current_condition.temp_C %>c
+  <%= @weather.current_condition.temp_F %>f
+  <%= @weather.current_condition.weatherDesc.first.value %>
 </div>

@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.worldweatheronline.com/free/v1/weather.ashx?format=JSON&key=nfvms2axfxrs9kaza6yywqqj&q=SP4%207DE
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=120
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 14 Dec 2013 23:07:46 GMT
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Cache:
+      - MISS
+      X-Mashery-Responder:
+      - prod-j-worker-eu-west-1a-102.mashery.com
+      X-Powered-By:
+      - UKFast Webcelerator
+      Content-Length:
+      - '456'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{ "data": { "current_condition": [ {"cloudcover": "75", "humidity":
+        "94", "observation_time": "11:07 PM", "precipMM": "2.6", "pressure": "1017",
+        "temp_C": "10", "temp_F": "50", "visibility": "5", "weatherCode": "299",  "weatherDesc":
+        [ {"value": "Moderate rain at times" } ],  "weatherIconUrl": [ {"value": "http:\/\/cdn.worldweatheronline.net\/images\/wsymbols01_png_64\/wsymbol_0026_heavy_rain_showers_night.png"
+        } ], "winddir16Point": "SSW", "winddirDegree": "200", "windspeedKmph": "37",
+        "windspeedMiles": "23" } ],  "request": [ {"query": "SP4", "type": "Postcode"
+        } ],  "weather": [ {"date": "2013-12-14", "precipMM": "2.6", "tempMaxC": "12",
+        "tempMaxF": "53", "tempMinC": "7", "tempMinF": "44", "weatherCode": "116",  "weatherDesc":
+        [ {"value": "Partly Cloudy" } ],  "weatherIconUrl": [ {"value": "http:\/\/cdn.worldweatheronline.net\/images\/wsymbols01_png_64\/wsymbol_0002_sunny_intervals.png"
+        } ], "winddir16Point": "SSW", "winddirDegree": "199", "winddirection": "SSW",
+        "windspeedKmph": "35", "windspeedMiles": "22" } ] }}'
+    http_version: 
+  recorded_at: Sat, 14 Dec 2013 23:07:46 GMT
+recorded_with: VCR 2.8.0

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-feature "Visitor getting forecast for location" do
+feature "Visitor getting forecast for location", vcr: true do
   scenario "using a valid postcode" do
     visit "/"
     fill_in "location_input", with: "SP4 7DE"
@@ -9,7 +9,7 @@ feature "Visitor getting forecast for location" do
     within("#forecast_current") do
       expect(page).to have_content("10c")
       expect(page).to have_content("50f")
-      expect(page).to have_content("Clear")
+      expect(page).to have_content("Moderate rain")
     end
   end
 
@@ -23,6 +23,14 @@ feature "Visitor getting forecast for location" do
       expect(page).to have_content("52f")
       expect(page).to have_content("Partly Cloudy")
     end
+  end
+
+  scenario "using an invalid location" do
+    visit "/"
+    fill_in "location_input", with: "480938205820985092385"
+    click_button "location_button"
+
+    expect(page).to have_content("Please enter a valid location")
   end
 
   scenario "using an empty location" do

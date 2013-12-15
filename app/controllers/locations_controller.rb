@@ -1,14 +1,24 @@
 class LocationsController < ApplicationController
 
-  respond_to :html
-
   def new
     @location = Location.new
   end
 
   def create
     @location = Location.new(params[:location])
-    flash.now.alert = t('alerts.enter_location') unless @location.valid?
-    respond_with(@location)
+
+    if @location.valid?
+      redirect_to location_path(id: @location.name)
+    else
+      flash.now.alert = t('alerts.enter_location') 
+      render :new
+    end
+  end
+
+  def show
+    @weather = WeatherForLocation.new.get(params[:id])
+    unless @weather.valid?
+      redirect_to new_location_path, alert: t('alerts.location_invalid')
+    end
   end
 end
