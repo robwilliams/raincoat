@@ -1,0 +1,518 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.worldweatheronline.com/free/v1/search.ashx?format=JSON&key=nfvms2axfxrs9kaza6yywqqj&q=Paris
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=120
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 15 Dec 2013 12:18:55 GMT
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Cache:
+      - MISS
+      X-Mashery-Responder:
+      - prod-j-worker-eu-west-1a-102.mashery.com
+      X-Powered-By:
+      - UKFast Webcelerator
+      Content-Length:
+      - '558'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{ "search_api": { "result": [ { "areaName": [ {"value": "Paris" } ],  "country":
+        [ {"value": "France" } ], "latitude": "48.867", "longitude": "2.333", "population":
+        "2110694",  "region": [ {"value": "Ile-De-France" } ],  "weatherUrl": [ {"value":
+        "http:\/\/www.worldweatheronline.com\/Paris-weather\/Ile-de-France\/FR.aspx"
+        } ] }, { "areaName": [ {"value": "Paris" } ],  "country": [ {"value": "United
+        States Of America" } ], "latitude": "33.661", "longitude": "-95.555", "population":
+        "27022",  "region": [ {"value": "Texas" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Paris-weather\/Texas\/US.aspx"
+        } ] }, { "areaName": [ {"value": "Paris" } ],  "country": [ {"value": "Canada"
+        } ], "latitude": "43.200", "longitude": "-80.383", "population": "10437",  "region":
+        [ {"value": "Ontario" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Paris-weather\/Ontario\/CA.aspx"
+        } ] }, { "areaName": [ {"value": "Paris" } ],  "country": [ {"value": "United
+        States Of America" } ], "latitude": "36.302", "longitude": "-88.327", "population":
+        "9587",  "region": [ {"value": "Tennessee" } ],  "weatherUrl": [ {"value":
+        "http:\/\/www.worldweatheronline.com\/Paris-weather\/Tennessee\/US.aspx" }
+        ] }, { "areaName": [ {"value": "Paris" } ],  "country": [ {"value": "United
+        States Of America" } ], "latitude": "38.210", "longitude": "-84.253", "population":
+        "9332",  "region": [ {"value": "Kentucky" } ],  "weatherUrl": [ {"value":
+        "http:\/\/www.worldweatheronline.com\/Paris-weather\/Kentucky\/US.aspx" }
+        ] }, { "areaName": [ {"value": "Paris" } ],  "country": [ {"value": "United
+        States Of America" } ], "latitude": "44.260", "longitude": "-70.501", "population":
+        "5073",  "region": [ {"value": "Maine" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Paris-weather\/Maine\/US.aspx"
+        } ] }, { "areaName": [ {"value": "Paris" } ],  "country": [ {"value": "Bolivia"
+        } ], "latitude": "-13.550", "longitude": "-62.483", "population": "0",  "region":
+        [ {"value": "El Beni" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Paris-weather\/El-Beni\/BO.aspx"
+        } ] }, { "areaName": [ {"value": "Paris" } ],  "country": [ {"value": "Canada"
+        } ], "latitude": "63.817", "longitude": "-138.667", "population": "0",  "region":
+        [ {"value": "Yukon Territory" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Paris-weather\/Yukon-Territory\/CA.aspx"
+        } ] }, { "areaName": [ {"value": "Paris" } ],  "country": [ {"value": "Congo"
+        } ], "latitude": "1.553", "longitude": "15.641", "population": "0",  "region":
+        [ {"value": "Sangha" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Paris-weather\/Sangha\/CG.aspx"
+        } ] }, { "areaName": [ {"value": "Paris" } ],  "country": [ {"value": "United
+        States Of America" } ], "latitude": "42.634", "longitude": "-88.051", "population":
+        "0",  "region": [ {"value": "Wisconsin" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Paris-weather\/Wisconsin\/US.aspx"
+        } ] } ] }}'
+    http_version: 
+  recorded_at: Sun, 15 Dec 2013 12:18:58 GMT
+- request:
+    method: get
+    uri: http://api.worldweatheronline.com/free/v1/search.ashx?format=JSON&key=nfvms2axfxrs9kaza6yywqqj&q=Rome
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=120
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 15 Dec 2013 12:18:55 GMT
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Cache:
+      - MISS
+      X-Mashery-Responder:
+      - prod-j-worker-eu-west-1a-104.mashery.com
+      X-Powered-By:
+      - UKFast Webcelerator
+      Content-Length:
+      - '568'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{ "search_api": { "result": [ { "areaName": [ {"value": "Rome" } ],  "country":
+        [ {"value": "Italy" } ], "latitude": "41.900", "longitude": "12.483", "population":
+        "2643736",  "region": [ {"value": "Lazio" } ],  "weatherUrl": [ {"value":
+        "http:\/\/www.worldweatheronline.com\/Rome-weather\/Lazio\/IT.aspx" } ] },
+        { "areaName": [ {"value": "Rome" } ],  "country": [ {"value": "United States
+        Of America" } ], "latitude": "34.257", "longitude": "-85.165", "population":
+        "35452",  "region": [ {"value": "Georgia" } ],  "weatherUrl": [ {"value":
+        "http:\/\/www.worldweatheronline.com\/Rome-weather\/Georgia\/US.aspx" } ]
+        }, { "areaName": [ {"value": "Rome" } ],  "country": [ {"value": "United States
+        Of America" } ], "latitude": "43.213", "longitude": "-75.456", "population":
+        "34074",  "region": [ {"value": "New York" } ],  "weatherUrl": [ {"value":
+        "http:\/\/www.worldweatheronline.com\/Rome-weather\/New-York\/US.aspx" } ]
+        }, { "areaName": [ {"value": "Rome" } ],  "country": [ {"value": "Belgium"
+        } ], "latitude": "50.700", "longitude": "3.700", "population": "0",  "weatherUrl":
+        [ {"value": "http:\/\/www.worldweatheronline.com\/Rome-weather\/BE.aspx" }
+        ] }, { "areaName": [ {"value": "Rome" } ],  "country": [ {"value": "Indonesia"
+        } ], "latitude": "-3.633", "longitude": "133.683", "population": "0",  "region":
+        [ {"value": "Sulawesi Tenggara" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Rome-weather\/Sulawesi-Tenggara\/ID.aspx"
+        } ] }, { "areaName": [ {"value": "Rome" } ],  "country": [ {"value": "Jamaica"
+        } ], "latitude": "18.417", "longitude": "-78.050", "population": "0",  "region":
+        [ {"value": "Hanover" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Rome-weather\/Hanover\/JM.aspx"
+        } ] }, { "areaName": [ {"value": "Rome" } ],  "country": [ {"value": "Netherlands"
+        } ], "latitude": "51.800", "longitude": "5.317", "population": "0",  "region":
+        [ {"value": "Gelderland" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Rome-weather\/Gelderland\/NL.aspx"
+        } ] }, { "areaName": [ {"value": "Rome" } ],  "country": [ {"value": "Portugal"
+        } ], "latitude": "41.717", "longitude": "-8.767", "population": "0",  "region":
+        [ {"value": "Viana Do Castelo" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Rome-weather\/Viana-do-Castelo\/PT.aspx"
+        } ] }, { "areaName": [ {"value": "Rome" } ],  "country": [ {"value": "United
+        States Of America" } ], "latitude": "33.963", "longitude": "-90.478", "population":
+        "0",  "region": [ {"value": "Mississippi" } ],  "weatherUrl": [ {"value":
+        "http:\/\/www.worldweatheronline.com\/Rome-weather\/Mississippi\/US.aspx"
+        } ] }, { "areaName": [ {"value": "Rome" } ],  "country": [ {"value": "United
+        States Of America" } ], "latitude": "42.839", "longitude": "-117.627", "population":
+        "0",  "region": [ {"value": "Oregon" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Rome-weather\/Oregon\/US.aspx"
+        } ] } ] }}'
+    http_version: 
+  recorded_at: Sun, 15 Dec 2013 12:18:58 GMT
+- request:
+    method: get
+    uri: http://api.worldweatheronline.com/free/v1/search.ashx?format=JSON&key=nfvms2axfxrs9kaza6yywqqj&q=Krakow
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=120
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 15 Dec 2013 12:18:56 GMT
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Cache:
+      - MISS
+      X-Mashery-Responder:
+      - prod-j-worker-eu-west-1a-90.mashery.com
+      X-Powered-By:
+      - UKFast Webcelerator
+      Content-Length:
+      - '390'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{ "search_api": { "result": [ { "areaName": [ {"value": "Krakow" }
+        ],  "country": [ {"value": "Canada" } ], "latitude": "53.750", "longitude":
+        "-112.433", "population": "0",  "region": [ {"value": "Alberta" } ],  "weatherUrl":
+        [ {"value": "http:\/\/www.worldweatheronline.com\/Krakow-weather\/Alberta\/CA.aspx"
+        } ] }, { "areaName": [ {"value": "Krakow" } ],  "country": [ {"value": "Germany"
+        } ], "latitude": "53.650", "longitude": "12.267", "population": "0",  "region":
+        [ {"value": "Mecklenburg-Vorpommern" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Krakow-weather\/Mecklenburg-Vorpommern\/DE.aspx"
+        } ] }, { "areaName": [ {"value": "Krakow" } ],  "country": [ {"value": "Poland"
+        } ], "latitude": "51.733", "longitude": "18.517", "population": "0",  "weatherUrl":
+        [ {"value": "http:\/\/www.worldweatheronline.com\/Krakow-weather\/PL.aspx"
+        } ] }, { "areaName": [ {"value": "Krakow" } ],  "country": [ {"value": "Poland"
+        } ], "latitude": "50.083", "longitude": "19.917", "population": "0",  "weatherUrl":
+        [ {"value": "http:\/\/www.worldweatheronline.com\/Krakow-weather\/PL.aspx"
+        } ] }, { "areaName": [ {"value": "Krakow" } ],  "country": [ {"value": "United
+        States Of America" } ], "latitude": "38.498", "longitude": "-91.046", "population":
+        "0",  "region": [ {"value": "Missouri" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Krakow-weather\/Missouri\/US.aspx"
+        } ] }, { "areaName": [ {"value": "Krakow" } ],  "country": [ {"value": "United
+        States Of America" } ], "latitude": "44.762", "longitude": "-88.251", "population":
+        "0",  "region": [ {"value": "Wisconsin" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Krakow-weather\/Wisconsin\/US.aspx"
+        } ] } ] }}'
+    http_version: 
+  recorded_at: Sun, 15 Dec 2013 12:18:59 GMT
+- request:
+    method: get
+    uri: http://api.worldweatheronline.com/free/v1/search.ashx?format=JSON&key=nfvms2axfxrs9kaza6yywqqj&q=Sydney
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=120
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 15 Dec 2013 12:18:56 GMT
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Cache:
+      - MISS
+      X-Mashery-Responder:
+      - prod-j-worker-eu-west-1a-90.mashery.com
+      X-Powered-By:
+      - UKFast Webcelerator
+      Content-Length:
+      - '516'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{ "search_api": { "result": [ { "areaName": [ {"value": "Sydney" }
+        ],  "country": [ {"value": "Australia" } ], "latitude": "-33.883", "longitude":
+        "151.217", "population": "4394585",  "region": [ {"value": "New South Wales"
+        } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Sydney-weather\/New-South-Wales\/AU.aspx"
+        } ] }, { "areaName": [ {"value": "Sydney" } ],  "country": [ {"value": "Canada"
+        } ], "latitude": "46.150", "longitude": "-60.167", "population": "32660",  "region":
+        [ {"value": "Nova Scotia" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Sydney-weather\/Nova-Scotia\/CA.aspx"
+        } ] }, { "areaName": [ {"value": "Sydney" } ],  "country": [ {"value": "Canada"
+        } ], "latitude": "48.650", "longitude": "-123.417", "population": "0",  "region":
+        [ {"value": "British Columbia" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Sydney-weather\/British-Columbia\/CA.aspx"
+        } ] }, { "areaName": [ {"value": "Sydney" } ],  "country": [ {"value": "United
+        Kingdom" } ], "latitude": "53.105", "longitude": "-2.412", "population": "0",  "region":
+        [ {"value": "Cheshire" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Sydney-weather\/Cheshire\/GB.aspx"
+        } ] }, { "areaName": [ {"value": "Sydney" } ],  "country": [ {"value": "United
+        States Of America" } ], "latitude": "46.731", "longitude": "-98.769", "population":
+        "0",  "region": [ {"value": "North Dakota" } ],  "weatherUrl": [ {"value":
+        "http:\/\/www.worldweatheronline.com\/Sydney-weather\/North-Dakota\/US.aspx"
+        } ] }, { "areaName": [ {"value": "Sydney" } ],  "country": [ {"value": "United
+        States Of America" } ], "latitude": "27.963", "longitude": "-82.208", "population":
+        "0",  "region": [ {"value": "Florida" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Sydney-weather\/Florida\/US.aspx"
+        } ] }, { "areaName": [ {"value": "Sydney" } ],  "country": [ {"value": "Vanuatu"
+        } ], "latitude": "-19.533", "longitude": "169.267", "population": "0",  "region":
+        [ {"value": "Tafea" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Sydney-weather\/Tafea\/VU.aspx"
+        } ] }, { "areaName": [ {"value": "Sydney" } ],  "country": [ {"value": "South
+        Africa" } ], "latitude": "-26.200", "longitude": "23.100", "population": "0",  "region":
+        [ {"value": "North-West" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Sydney-weather\/North-West\/ZA.aspx"
+        } ] } ] }}'
+    http_version: 
+  recorded_at: Sun, 15 Dec 2013 12:18:59 GMT
+- request:
+    method: get
+    uri: http://api.worldweatheronline.com/free/v1/search.ashx?format=JSON&key=nfvms2axfxrs9kaza6yywqqj&q=Tokyo
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=120
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 15 Dec 2013 12:18:57 GMT
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Cache:
+      - MISS
+      X-Mashery-Responder:
+      - prod-j-worker-eu-west-1a-100.mashery.com
+      X-Powered-By:
+      - UKFast Webcelerator
+      Content-Length:
+      - '264'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{ "search_api": { "result": [ { "areaName": [ {"value": "Tokyo" } ],  "country":
+        [ {"value": "Japan" } ], "latitude": "35.685", "longitude": "139.751", "population":
+        "31480498",  "region": [ {"value": "Tokyo" } ],  "weatherUrl": [ {"value":
+        "http:\/\/www.worldweatheronline.com\/Tokyo-weather\/Tokyo\/JP.aspx" } ] },
+        { "areaName": [ {"value": "Tokyo" } ],  "country": [ {"value": "Papua New
+        Guinea" } ], "latitude": "-8.400", "longitude": "147.150", "population": "0",  "region":
+        [ {"value": "Central" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Tokyo-weather\/Central\/PG.aspx"
+        } ] } ] }}'
+    http_version: 
+  recorded_at: Sun, 15 Dec 2013 12:18:59 GMT
+- request:
+    method: get
+    uri: http://api.worldweatheronline.com/free/v1/search.ashx?format=JSON&key=nfvms2axfxrs9kaza6yywqqj&q=Denver
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=120
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 15 Dec 2013 12:18:57 GMT
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Cache:
+      - MISS
+      X-Mashery-Responder:
+      - prod-j-worker-eu-west-1a-102.mashery.com
+      X-Powered-By:
+      - UKFast Webcelerator
+      Content-Length:
+      - '523'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{ "search_api": { "result": [ { "areaName": [ {"value": "Denver" }
+        ],  "country": [ {"value": "United States Of America" } ], "latitude": "39.739",
+        "longitude": "-104.984", "population": "555981",  "region": [ {"value": "Colorado"
+        } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Denver-weather\/Colorado\/US.aspx"
+        } ] }, { "areaName": [ {"value": "Denver" } ],  "country": [ {"value": "Australia"
+        } ], "latitude": "-37.267", "longitude": "144.300", "population": "0",  "region":
+        [ {"value": "Victoria" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Denver-weather\/Victoria\/AU.aspx"
+        } ] }, { "areaName": [ {"value": "Denver" } ],  "country": [ {"value": "United
+        Kingdom" } ], "latitude": "52.587", "longitude": "0.383", "population": "0",  "region":
+        [ {"value": "Norfolk" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Denver-weather\/Norfolk\/GB.aspx"
+        } ] }, { "areaName": [ {"value": "Denver" } ],  "country": [ {"value": "United
+        States Of America" } ], "latitude": "37.776", "longitude": "-82.855", "population":
+        "0",  "region": [ {"value": "Kentucky" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Denver-weather\/Kentucky\/US.aspx"
+        } ] }, { "areaName": [ {"value": "Denver" } ],  "country": [ {"value": "United
+        States Of America" } ], "latitude": "34.575", "longitude": "-82.737", "population":
+        "0",  "region": [ {"value": "South Carolina" } ],  "weatherUrl": [ {"value":
+        "http:\/\/www.worldweatheronline.com\/Denver-weather\/South-Carolina\/US.aspx"
+        } ] }, { "areaName": [ {"value": "Denver" } ],  "country": [ {"value": "United
+        States Of America" } ], "latitude": "29.404", "longitude": "-81.527", "population":
+        "0",  "region": [ {"value": "Florida" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Denver-weather\/Florida\/US.aspx"
+        } ] }, { "areaName": [ {"value": "Denver" } ],  "country": [ {"value": "United
+        States Of America" } ], "latitude": "35.531", "longitude": "-81.030", "population":
+        "0",  "region": [ {"value": "North Carolina" } ],  "weatherUrl": [ {"value":
+        "http:\/\/www.worldweatheronline.com\/Denver-weather\/North-Carolina\/US.aspx"
+        } ] }, { "areaName": [ {"value": "Denver" } ],  "country": [ {"value": "United
+        States Of America" } ], "latitude": "39.382", "longitude": "-79.771", "population":
+        "0",  "region": [ {"value": "West Virginia" } ],  "weatherUrl": [ {"value":
+        "http:\/\/www.worldweatheronline.com\/Denver-weather\/West-Virginia\/US.aspx"
+        } ] }, { "areaName": [ {"value": "Denver" } ],  "country": [ {"value": "United
+        States Of America" } ], "latitude": "40.233", "longitude": "-76.138", "population":
+        "0",  "region": [ {"value": "Pennsylvania" } ],  "weatherUrl": [ {"value":
+        "http:\/\/www.worldweatheronline.com\/Denver-weather\/Pennsylvania\/US.aspx"
+        } ] }, { "areaName": [ {"value": "Denver" } ],  "country": [ {"value": "United
+        States Of America" } ], "latitude": "45.998", "longitude": "-116.235", "population":
+        "0",  "region": [ {"value": "Idaho" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Denver-weather\/Idaho\/US.aspx"
+        } ] } ] }}'
+    http_version: 
+  recorded_at: Sun, 15 Dec 2013 12:19:00 GMT
+- request:
+    method: get
+    uri: http://api.worldweatheronline.com/free/v1/search.ashx?format=JSON&key=nfvms2axfxrs9kaza6yywqqj&q=Toronto
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      Cache-Control:
+      - public, no-cache="Set-Cookie", max-age=120
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 15 Dec 2013 12:18:58 GMT
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Cache:
+      - MISS
+      X-Mashery-Responder:
+      - prod-j-worker-eu-west-1a-102.mashery.com
+      X-Powered-By:
+      - UKFast Webcelerator
+      Content-Length:
+      - '558'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{ "search_api": { "result": [ { "areaName": [ {"value": "Toronto" }
+        ],  "country": [ {"value": "Canada" } ], "latitude": "43.667", "longitude":
+        "-79.417", "population": "4612187",  "region": [ {"value": "Ontario" } ],  "weatherUrl":
+        [ {"value": "http:\/\/www.worldweatheronline.com\/Toronto-weather\/Ontario\/CA.aspx"
+        } ] }, { "areaName": [ {"value": "Toronto" } ],  "country": [ {"value": "Australia"
+        } ], "latitude": "-33.000", "longitude": "151.600", "population": "0",  "region":
+        [ {"value": "New South Wales" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Toronto-weather\/New-South-Wales\/AU.aspx"
+        } ] }, { "areaName": [ {"value": "Toronto" } ],  "country": [ {"value": "Colombia"
+        } ], "latitude": "7.950", "longitude": "-74.917", "population": "0",  "region":
+        [ {"value": "Antioquia" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Toronto-weather\/Antioquia\/CO.aspx"
+        } ] }, { "areaName": [ {"value": "Toronto" } ],  "country": [ {"value": "Colombia"
+        } ], "latitude": "8.417", "longitude": "-75.283", "population": "0",  "region":
+        [ {"value": "Cordoba" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Toronto-weather\/Cordoba\/CO.aspx"
+        } ] }, { "areaName": [ {"value": "Toronto" } ],  "country": [ {"value": "Cuba"
+        } ], "latitude": "22.783", "longitude": "-82.500", "population": "0",  "region":
+        [ {"value": "La Habana" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Toronto-weather\/La-Habana\/CU.aspx"
+        } ] }, { "areaName": [ {"value": "Toronto" } ],  "country": [ {"value": "United
+        Kingdom" } ], "latitude": "54.669", "longitude": "-1.699", "population": "0",  "region":
+        [ {"value": "County Durham" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Toronto-weather\/County-Durham\/GB.aspx"
+        } ] }, { "areaName": [ {"value": "Toronto" } ],  "country": [ {"value": "Tanzania"
+        } ], "latitude": "-4.900", "longitude": "38.100", "population": "0",  "region":
+        [ {"value": "Tanga" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Toronto-weather\/Tanga\/TZ.aspx"
+        } ] }, { "areaName": [ {"value": "Toronto" } ],  "country": [ {"value": "United
+        States Of America" } ], "latitude": "39.714", "longitude": "-89.630", "population":
+        "0",  "region": [ {"value": "Illinois" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Toronto-weather\/Illinois\/US.aspx"
+        } ] }, { "areaName": [ {"value": "Toronto" } ],  "country": [ {"value": "United
+        States Of America" } ], "latitude": "44.573", "longitude": "-96.642", "population":
+        "0",  "region": [ {"value": "South Dakota" } ],  "weatherUrl": [ {"value":
+        "http:\/\/www.worldweatheronline.com\/Toronto-weather\/South-Dakota\/US.aspx"
+        } ] }, { "areaName": [ {"value": "Toronto" } ],  "country": [ {"value": "United
+        States Of America" } ], "latitude": "30.340", "longitude": "-103.750", "population":
+        "0",  "region": [ {"value": "Texas" } ],  "weatherUrl": [ {"value": "http:\/\/www.worldweatheronline.com\/Toronto-weather\/Texas\/US.aspx"
+        } ] } ] }}'
+    http_version: 
+  recorded_at: Sun, 15 Dec 2013 12:19:00 GMT
+recorded_with: VCR 2.8.0
