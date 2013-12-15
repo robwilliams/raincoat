@@ -36,5 +36,5 @@ module WorldWeather
   end
 
   class ApiKeyMissing < StandardError; end;
-  class InvalidApiKey < StandardError; end;
+  class ApiError < StandardError; end;
 end

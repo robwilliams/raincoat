@@ -39,9 +39,9 @@ module WorldWeather
       subject { described_class.new(api_key: 'invalid') }
 
       describe "#get" do
-        it "raises InvalidApiKey" do
+        it "raises ApiError" do
           expect{ subject.get("search.ashx", q: "London") }.to(
-            raise_error(InvalidApiKey)
+            raise_error(ApiError)
           )
         end
       end
