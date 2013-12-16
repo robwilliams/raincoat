@@ -9,7 +9,7 @@ class Location
            :description, to: :weather, prefix: true
 
   def weather
-    Rails.cache.fetch("weather_for_#{name}") {
+    Rails.cache.fetch("weather_for_#{name}", expires_in: 4.hours) {
       WorldWeather::Weather.new.get(name)
     }
   end
