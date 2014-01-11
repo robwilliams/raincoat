@@ -47,6 +47,7 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'rails_12factor', group: :production
 gem "foreman", require: false, group: :development
 
 group :development, :test do
